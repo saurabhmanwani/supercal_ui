@@ -1,0 +1,155 @@
+<div class="body" ng-controller="emailChangePlanContlr">
+    <span id="messagesRegion">
+        <ul class="message">
+            <li class="infomsg">Your change of Rate Plan email send Failed</li>
+        </ul>
+    </span>
+    <form name="emailRatePlanChange" class="edit">
+        <div class="rich-panel">
+            <div class="rich-stglpanel-header" onclick="">
+                <div class="rich-stglpanel-marker">
+                    <div class="rich-stglpnl-marker" id="showdiv" onclick="toggleDiv();">«</div>
+                </div>
+                Email Rate Plan Change
+            </div>
+            <div class="rich-stglpanel-body">
+                <div class="prop" style="text-align: right;">
+                    <label class="name ">
+                        <span>Service No :
+                            <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                        </span>
+                        <span class="required">
+                            <img src="img/required.jpg" class="img-required">
+                        </span>
+                    </label>
+                    <span class="value ">
+                        <input type="text" maxlength="30" size="30">
+                    </span>
+                    <span class="error">
+                    </span>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>Account No :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/required.jpg" class="img-required">
+                            </span>
+                        </label>
+                        <span class="value ">
+                            <input type="text" maxlength="45" size="30">
+                        </span>
+                        <span class="error">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name ">
+                            <span>Customer Name :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/required.jpg" class="img-required">
+                            </span>
+                        </label>
+                        <span class="value">
+                            <div style="text-align:top;">
+                                <label>Title</label>
+                                <img alt="" class="rich-spacer " height="1" src="img/spacer.gif" width="50">
+                                <label>First Name</label>
+                                <img alt="" class="rich-spacer " height="1" src="img/spacer.gif" width="150">
+                                <label>Surname</label>
+                            </div>
+                            <input type="text" maxlength="15" size="5">
+                            <img alt="" class="rich-spacer " height="1" src="img/spacer.gif" width="1">
+                            <input type="text" maxlength="30" size="30">
+                            <img alt="" class="rich-spacer " height="1" src="img/spacer.gif" width="1">
+                            <input type="text" maxlength="30" size="30">
+                        </span>
+                        <span class="error">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name ">
+                            <span>Email Address :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/required.jpg" class="img-required">
+                            </span>
+                        </label>
+                        <span class="value">
+                            <input type="text" maxlength="50" size="50">
+                        </span>
+                        <span class="error">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name ">
+                            <span>Rate Plan Change Fee :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/required.jpg" class="img-required">
+                            </span>
+                        </label>
+                        <span class="value ">
+                            $
+                            <input type="text" value="0.00" maxlength="50" size="50" title="Enter Only Digits">
+                        </span>
+                        <span class="error">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name ">
+                            <span>Old Rate Plan :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+                        <span class="value">
+                            <input type="text" maxlength="150" size="120" autocomplete="off">
+                        </span>
+                        <span class="error">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name ">
+                            <span>New Rate Plan :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+                        <span class="value ">
+                            <input type="text" maxlength="150" size="120" autocomplete="off" />
+                            <div>
+                                <img alt="" class="rich-spacer " height="15px" src="img/spacer.gif" width="1">
+                            </div>
+                        </span>
+                        <span class="error">
+                        </span>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <div class="actionButtons">
+            <input type="image" src="img/but-email.gif" name="emailRatePlanChange:send"><input onclick="" value="Cancel" type="image" src="img/but-cancel.gif">
+        </div>
+    </form>
+</div>

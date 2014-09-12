@@ -1,0 +1,136 @@
+<div class="body">
+    <form name="boltOnSearch" ng-controller="boltOnSearchContlr">
+        <div class="rich-stglpanel">
+            <div class="rich-stglpanel-header" onclick="">
+                <div class="rich-stglpanel-marker">
+                    <div class="rich-stglpnl-marker" id="showdiv" onclick="toggleDiv();">«</div>
+                </div>
+                Bolt On Search &nbsp;
+            </div>
+            <div class="rich-stglpanel-body">
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>
+                                <span>BoltOn Family :
+                                    <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15" />
+                                </span>
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9" />
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <select size="1">
+                                <option value="noSelectionValue"></option>
+                                <option value="0">International Pack</option>
+                                <option value="1">'yes' Biz Data</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>
+                                <span>Bolt On Name :
+                                    <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15" />
+                                </span>
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9" />
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <input type="text" size="60">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>
+                                <span>Status :
+                                    <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15" />
+                                </span>
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9" />
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <select size="1">
+                                <option value="ACTIVE">Active</option>
+                                <option value="INACTIVE">InActive</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>
+                                <span>Match :
+                                    <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15" />
+                                </span>
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9" />
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <table class="radio">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" checked="checked" value="and">
+                                            <label>All</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" value="or">
+                                            <label>Any</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actionButtons">
+            <input type="image" src="img/but-search.gif"><input onclick="" type="image" src="img/but-reset.gif" />
+        </div>
+    </form>
+    <div class="rich-panel ">
+        <div class="rich-panel-header">BoltOn Search Results (10)</div>
+        <div class="rich-panel-body">
+            <div>
+                <table class="rich-table">
+                    <colgroup span="4"></colgroup>
+                    <thead class="rich-table-thead">
+                        <tr class="rich-table-subheader ">
+                            <th class="rich-table-subheadercell" scope="col"><a href="">Id </a>
+                            </th>
+                            <th class="rich-table-subheadercell" scope="col"><a href="">Bolt On Name </a>
+                            </th>
+                            <th class="rich-table-subheadercell" scope="col">Bolt On Family</th>
+                            <th class="rich-table-subheadercell" scope="col"><a href="">Status </a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onmouseover="this.style.backgroundColor=&#39;#F1F1F1&#39;" onmouseout="this.style.backgroundColor=&#39;#FFFFFF&#39;">
+                            <td class="rich-table-cell ">2</td>
+                            <td class="rich-table-cell ">$10 IVP</td>
+                            <td class="rich-table-cell ">International Pack</td>
+                            <td class="rich-table-cell ">ACTIVE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="tableControl">
+    </div>
+</div>

@@ -1,0 +1,180 @@
+<div class="body">
+    <span id="messagesRegion"></span>
+    <form id="autoEmailLogSearch" name="autoEmailLogSearch" method="post" class="edit">
+        <div class="rich-stglpanel">
+            <div class="rich-stglpanel-header">
+                <div class="rich-stglpanel-marker">
+                    <div class="rich-stglpnl-marker" id="showdiv" onclick="toggleDiv();">«</div>
+                </div>Batch Email Search&nbsp;
+            </div>
+            <div class="rich-stglpanel-body">
+                <div class="prop" style="text-align: right;">
+                    <label class="name">
+                        <span>Customer Name :
+                            <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                        </span>
+                        <span class="required">
+                            <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                        </span>
+                    </label>
+
+                    <span class="value displayonly">
+                        <input type="text">
+                    </span>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>Email Address :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+
+                        <span class="value displayonly">
+                            <input type="text">
+                        </span>
+
+                    </div>
+
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>Account Number :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <input type="text">
+                        </span>
+                    </div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>Service No :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <input type="text">
+                        </span>
+                    </div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>Start Date :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <span>
+                                <input class="rich-calendar-input" style="vertical-align: middle; " type="text" readonly="readonly">
+                                <img alt="" class="rich-calendar-button" style="vertical-align: middle" src="img/cal.gif">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>
+                                <span>End Date :
+                                    <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                                </span>
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+
+                        <span class="value displayonly">
+                            <input class="rich-calendar-input" style="vertical-align: middle; " type="text" readonly="readonly">
+                            <img alt="" class="rich-calendar-button" style="vertical-align: middle" src="img/cal.gif">
+                        </span>
+                    </div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>
+                                <span>Send Status :
+                                    <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                                </span>
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <select size="1">
+                                <option value=""></option>
+                                <option value="SENT">Sent</option>
+                                <option value="SENTINVALID">Sent Invalid</option>
+                                <option value="NOTSENT">Not Sent</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actionButtons">
+                <input type="image" src="img/but-search.gif">
+                <input onclick="" type="image" src="img/but-reset.gif">
+            </div>
+        </div>
+    </form>
+    <img alt="" class="rich-spacer" height="10px" src="img/spacer.gif" width="1">
+    <div class="rich-panel">
+        <div class="rich-panel-header">Batch Email Search Results (5765)</div>
+        <div class="rich-panel-body">
+            <div class="results">
+                <table class="rich-table">
+                    <colgroup span="7"></colgroup>
+                    <thead class="rich-table-thead">
+                        <tr class="rich-table-subheader">
+                            <th class="rich-table-subheadercell" scope="col"><a href="" class="columnHeader">Id </a>
+                            </th>
+                            <th class="rich-table-subheadercell" scope="col"><a href="" class="columnHeader">Customer Name </a>
+                            </th>
+                            <th class="rich-table-subheadercell" scope="col"><a href="" class="columnHeader">Email Address </a>
+                            </th>
+                            <th class="rich-table-subheadercell" scope="col"><a href="" class="columnHeader">Email Date </a>
+                            </th>
+                            <th class="rich-table-subheadercell" scope="col"><a href="" class="columnHeader">Channel </a>
+                            </th>
+                            <th class="rich-table-subheadercell" scope="col"><a href="" class="columnHeader">Send status </a>
+                            </th>
+                            <th class="rich-table-subheadercell" scope="col">
+                                <div>Action</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="rich-table-row" onmouseover="this.style.backgroundColor=&#39;#F1F1F1&#39;" onmouseout="this.style.backgroundColor=&#39;#FFFFFF&#39;" style="background-color: rgb(255, 255, 255);">
+                            <td class="rich-table-cell ">2</td>
+                            <td class="rich-table-cell ">5 LONSDALE</td>
+                            <td class="rich-table-cell ">ANTHONYLONSDALE01@GMAIL.COM</td>
+                            <td class="rich-table-cell ">26/10/2011</td>
+                            <td class="rich-table-cell "></td>
+                            <td class="rich-table-cell ">SENT</td>
+                            <td class="rich-table-cell action"><a href="">View/ReSend</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="tableControl">
+        <a href="" id="nextPage">
+            <img src="img/next.png" alt="Next Page">
+        </a>
+        <a href="" id="lastPage">
+            <img src="img/last.png" alt="Last Page">
+        </a>
+    </div>
+    
+</div>

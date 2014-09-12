@@ -1,0 +1,1123 @@
+/* Added by Travis 21st Oct 08 */
+a.menuHeaderItems:active,a.menuHeaderItems:link,a.menuHeaderItems:visited
+	{
+	color: #006685;
+	text-decoration: none;
+}
+
+a.menuHeaderItems:hover {
+	color: #0097ac;
+	text-decoration: underline;
+}
+
+.menuHeaderItems {
+	color: #DEDEDE;
+	text-decoration: none;
+	height: 16px;
+	font-weight: normal;
+}
+
+.menuHeaderAppName {
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.menuHeaderWelcome {
+	color: #DEDEDE;
+	height: 16px;
+}
+
+.dr-toolbar-ext {
+	background-image: none;
+	background-color: #000000;
+	border: 0px;
+}
+
+.rich-table-subheadercell {
+	background-color: #ffffdd;
+	white-space: normal;
+	background-image: none;
+	/* THis is to avoid seam gen putting its own graident image.*/
+}
+
+.rich-table-subheadercell-note {
+	background-color: #ffffdd;
+	white-space: normal;
+	background-image: none;
+	/* THis is to avoid seam gen putting its own graident image.*/
+	font-weight: normal;
+	color: #FE0000;
+}
+
+tr.odd {
+	background-color: #EAEAEA;
+}
+
+.dr-stglpnl-h {
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	color: #000000;
+	font-size: 1.2em;
+	font-family: arial, helvetica, sans-serif;
+	background-color: #006685;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 1px solid #bfd9e0;
+	padding: 5px;
+	height: 20px;
+}
+
+.rich-stglpanel {
+	border-top: 1px solid #C0C0C0;
+	border-right: 1px solid #C0C0C0;
+	border-left: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
+	-moz-border-radius: 5px;
+}
+
+.rich-stglpanel-body {
+	background-image: none;
+	color: #005000;
+	background-color: #ffffff;
+}
+
+input,textarea { /*background:#FFFFFF none repeat scroll 0 0;*/
+	color: black;
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 5px 0 0 10px;
+	width: auto;
+	padding: 0;
+	border: 1px solid #C0C0C0;
+	vertical-align: middle;
+	margin: 0px 0 0 0px;
+	-moz-border-radius: 5px;
+	overflow: auto;
+}
+
+input[type="text"],input[type="password"],textarea,select {
+	background-image: none;
+	/* THis is to avoid seam ge putting its own graident image.*/
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size: small;
+}
+
+input[type="submit"],input[type="button"],.inputsubmit {
+	background: #ffffff url("../img/button-background.gif") repeat-x;
+	/*background-repeat: repeat-x;
+  background-color:#ffd100;*/
+	border-color: #000000;
+	color: #FFFFFF;
+	margin: 5px;
+	-moz-border-radius: 5px;
+	font-size: 12px;
+	height: 30px !important;
+}
+
+/*Following is the same styles as above but since IE6 does not recognize it, we need to add the style class explicitly. */
+.inputsubmit {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 3px;
+	background: #000000 url("../img/button-background.gif") repeat-x;
+	border-color: #000000;
+	color: #FFFFFF;
+	margin: 5px;
+	-moz-border-radius: 5px;
+	font-size: 12px;
+	height: 30px !important;
+	font-weight: bold;
+	padding: 1px 4px;
+}
+
+.noBorder,.noBorder input {
+	border: 0px;
+}
+
+.dr-stglpnl-b {
+	color: #666666;
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.dr-pnl-h {
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	/*background-image:none;*/
+	color: #000000;
+	font-size: 1.2em;
+	font-family: arial, helvetica, sans-serif;
+	background-color: #8bbbca;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 1px solid #c0c0c0;
+	padding: 5px;
+	height: 20px;
+	color: #000000;
+}
+
+.rich-panel {
+	-moz-border-radius: 5px;
+	background-color: #F1F1F1;
+	border-color: #C0C0C0;
+}
+
+.rich-panel-body {
+	background-image: none;
+	background-color: #ffffff;
+}
+
+div.footer {
+	vertical-align: top;
+	/*opacity:0.7;*/
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+div.footer span {
+	vertical-align: top;
+	white-space: pre;
+}
+
+.footer {
+	border: 0px;
+	text-align: right;
+}
+
+.footer img {
+	border: 0px;
+}
+
+.name {
+	width: 35%;
+	white-space: normal;
+	vertical-align: middle;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	font-size-adjust: none;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	color: #666666;
+}
+
+form {
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	font-size-adjust: none;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+}
+
+.value {
+	vertical-align: middle;
+	margin: 0px 0 0 0px;
+	color: #000000;
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+span.name {
+	vertical-align: middle;
+	margin: 0px 0 0 0px;
+}
+
+span.displayonly {
+	text-align: left;
+	width: 60%;
+	overflow: visible;
+	vertical-align: middle;
+	margin: 0px 0 0 0px;
+	padding: 8px;
+}
+
+div.prop span.value {
+	text-align: left;
+	vertical-align: middle;
+	margin: 0px 0 0 0px;
+}
+
+div.prop span.value img {
+	text-align: left;
+	vertical-align: middle;
+	margin: 0px 0 0 0px;
+	border: 1px solid #BBBBBB;
+	border-right: 0px solid #BBBBBB;
+}
+
+.required {
+	vertical-align: middle;
+}
+
+.notrequiredsymbol {
+	white-space: pre;
+}
+
+.rich-Calendar-button {
+	background-image: url("../img/activeTab.png");
+}
+
+.rich-calendar-footer {
+	background-image: url("../img/calbkbot1.png");
+	background-repeat: repeat-x;
+	border-right-color: #C0C0C0;
+	border-top-color: #C0C0C0;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.rich-calendar-header {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.rich-calendar-days {
+	background-image: url("../img/calbktop2.png");
+	background-repeat: no-repeat;
+	border-right-color: #C0C0C0;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.rich-calendar-tool {
+	background-image: url("../img/calbktop1.png");
+	background-repeat: repeat-x;
+	color: #006786;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.rich-calendar-month {
+	background-image: url("../img/calbktop1.png");
+	background-repeat: repeat-x;
+	color: #006786;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.rich-calendar-tool-close {
+	background-image: url("../img/calbktop1.png");
+	background-repeat: repeat-x;
+	color: #006786;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	white-space: nowrap;
+	border: 0px solid #bfd9e0;
+}
+
+.rich-calendar-toolfooter {
+	background-image: url("../img/calbkbot1.png");
+	background-repeat: repeat-x;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.rich-calendar-today {
+	background-image: url("../img/calbkbot1.png");
+	background-repeat: repeat-x;
+	font-weight: normal;
+	color: #006685;
+}
+
+.rich-calendar-select {
+	background-color: #ffd100;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.rich-calendar-hover {
+	background-color: #ffd100;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.rich-calendar-tool-btn {
+	border: 0;
+}
+
+.rich-calendar-toolfooter {
+	background-image: url("../img/calbkbot1.png");
+	background-repeat: repeat-x;
+	border: 0;
+}
+
+.rich-calendar-toolfooter {
+	background: url("../img/calbkbot1.png");
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.rich-calendar-exterior {
+	border: 1px solid #0097ac;
+	background-image: url("../img/calbkbot1.png");
+}
+
+.rich-calendar-date-layout-ok,.rich-calendar-date-layout-cancel {
+	background: url("../img/calbkbot1.png");
+}
+
+.rich-calendar-editor-btn-selected {
+	background-color: #ffd100;
+	color: #006685;
+	border: 0;
+}
+
+.rich-calendar-time-btn {
+	background-image: url("../img/inactiveTab.png");
+	border-color: #FFFFFF #C0C0C0 #C0C0C0 #FFFFFF;
+	border-style: solid;
+	border-width: 0px;
+	cursor: pointer;
+	padding: 2px;
+	text-align: center;
+	white-space: nowrap;
+	width: 45px;
+}
+
+.rich-calendar-date-layout {
+	background: #f1f6f9 none repeat scroll 0 0;
+	border: 1px solid #C0C0C0;
+	position: relative;
+}
+
+.rich-calendar-button {
+	background-image: url("../img/inactiveTab.png");
+	border: 1px;
+}
+
+h1 {
+	color: #006786;
+	font-family: Arial, sans-serif;
+	font-size: 1.6em;
+	margin-top: 0;
+}
+
+body {
+	font-size: 12px;
+	background-color: #DEDEDE;
+	/*background:#DEDEDE url("../img//body-bg.png") repeat-x scroll left top;*/
+}
+/* This is for the div body*/
+.body {
+	padding: 10px 5px 30px 5px;
+}
+
+a:active,a:link,a:visited {
+	color: #000000;
+}
+
+a:hover {
+	color: #8CAFCD;
+}
+
+.rich-toolbar a:link,.rich-toolbar a:visited,.rich-toolbar a:active,.rich-toolbar a:hover
+	{
+	color: #006685;
+}
+
+.message {
+	border: 1px solid #ffd100;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #ffffdd;
+	/*background-image:url("../img/msg-bg.png");*/
+	font-size: 12px;
+	font-weight: normal;
+	color: red;
+	-moz-border-radius: 5px;
+	/*height:16px;*/
+}
+
+.message li {
+	margin-bottom: 4px;
+}
+
+.infomsg {
+	color: #000000;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.rich-modalpanel {
+	background-color: red;
+}
+
+.ajaxLoadingMsgBox {
+	-moz-border-radius: 5px;
+}
+
+/*.dr-menu-label-unselect {
+ padding:0px 10px;
+}*/
+.rich-separator {
+	background-position: center center;
+	background-repeat: repeat-x;
+	height: 6px;
+	background-image: none;
+}
+
+.rich-separator-header {
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: normal;
+	color: #666666;
+	/*float: left;*/
+}
+
+.pic { /*margin-bottom: -4px;*/
+	margin-right: 2px;
+}
+
+.dr-mpnl-pnl-h { /*background-color:red;*/
+	background-image: url("../img/tooltipbar.jpg");
+	height: 24px;
+	border: 0;
+	background-position: left top;
+	background-repeat: repeat-x;
+	border-style: none;
+	border-width: 0;
+	padding: 0;
+}
+
+.rich-mpnl-controls {
+	position: absolute;
+	right: 2px;
+	top: 3px;
+}
+
+.dr-mpnl-pnl {
+	background-color: #ffffff;
+	border-style: none;
+}
+
+.rich-message-label {
+	color: red;
+}
+
+div.prop span.value img {
+	border-width: 0;
+}
+
+.read-only-fields {
+	background-color: #f1f6f9 !important;
+}
+
+.infopanel {
+	border: 1px solid #C0C0C0;
+	-moz-border-radius: 5px;
+	width: 50%;
+	padding-left: 7px;
+}
+
+.row1 {
+	height: 60px;
+}
+
+.row1 .col {
+	padding: 10px;
+}
+
+.row2 {
+	height: 2px;
+}
+
+.row3 {
+	height: 20px;
+}
+
+.row3 .col {
+	text-align: left;
+}
+
+.col {
+	
+}
+
+pre {
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	white-space: normal;
+}
+
+.dr-toolbar-int {
+	padding: 0px 0px;
+}
+
+.hrline {
+	overflow: hidden;
+	height: 1px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1px;
+	background: #BDBDBD;
+}
+
+.dr-sb-int-sel {
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	background-repeat: repeat;
+	background-color: #ffcc00;
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	border-bottom: 1px solid #bfd9e0;
+}
+
+.dr-menu-list-bg {
+	/*background-image:url(/ssltracker/a4j/g/3_2_2.GAorg.richfaces.renderkit.html.images.background.MenuListBackground/DATB/eAF79O3R2rNrmQAW2gTk);*/
+	/*background-image:none;*/
+	background-image: url("../img/menu_bk.gif");
+	background-color: #ffffff;
+	/*border-left-color:#E2F6E2;
+ border-right-color:#E2F6E2;
+ border-top-color:#E2F6E2;*/
+	border-left-color: #F1F1F1;
+	border-right-color: #F1F1F1;
+	border-top-color: #F1F1F1;
+}
+
+.dr-menu-list-border {
+	background-color: #f1f6f9;
+	/*border-color:blue;*/
+}
+
+.dr-menu-icon {
+	margin-right: 10px;
+	/*background-image:url("../img/dr-pnl-h-bk.gif");
+ background-repeat: repeat;*/
+}
+
+.dr-menu-label-select {
+	background-color: #000000;
+	border-color: #000000;
+	color: #ffffff;
+}
+
+.rich-menu-item-label a:link,.rich-menu-item-label a:visited,.rich-menu-item-label a:active,.rich-menu-item-label a:hover
+	{
+	/* color: #006786; */
+}
+
+a:link.menuHeaderWelcome,a:visited.menuHeaderWelcome,a:active.menuHeaderWelcome,a:hover.menuHeaderWelcome
+	{
+	text-decoration: none;
+}
+
+.dr-sb-ext-decor-2 {
+	background-color: #FFFFFF;
+	border-color: #C0C0C0;
+}
+
+.dr-sb-cell-padding {
+	border-bottom: 1px solid #C0C0C0;
+	border-right: 1px solid #C0C0C0;
+	padding: 4px;
+}
+
+.actionButtons {
+	padding-left: 0px;
+}
+
+.tabButtons {
+	padding-left: 0px;
+	border-bottom: 3px solid #000000;
+}
+
+.tabButtonsActive {
+	border-bottom: 2px solid #000000;
+}
+
+.tabButtonsInActive {
+	padding-top: 5px;
+}
+
+.menu-header {
+	background: #000000 url(../img/left_cnr_top_w.gif) no-repeat scroll left
+		top !important;
+	border-bottom: 2px solid #ffcc00;
+	/*padding:10px 30px 0px 30px;*/
+}
+
+.section-header-inner {
+	background: transparent url(../img/right_cnr_top_w.gif) no-repeat scroll
+		right top !important;
+	/*float:left;*/
+	/*width:770px;*/
+}
+
+.dr-mpnl-pnl-text {
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding-top: 0px;
+}
+
+.dr-dscr-act {
+	border-top-color: #006786;
+	color: #006786;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.dr-dscr-inact {
+	border-top-color: #8bbbca;
+}
+
+.dr-dscr-button,.dr-dscr-sepctrl {
+	background-color: #8bbbca;
+	border-color: #ffffff;
+}
+
+.rvgRowSelected {
+	background-color: #F1F1F1;
+}
+
+.dr-table-header {
+	background-color: #FFFFDD;
+	background-image: none;
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+
+.dr-table-header-continue {
+	background-color: #FFFFDD;
+}
+
+.dr-table-headercell {
+	border-bottom: 1px solid #C0C0C0;
+	border-right: 1px solid #C0C0C0;
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+	text-align: center;
+}
+
+.searchResultListRow1 {
+	background-color: #FFFFFF;
+}
+
+.searchResultListRow2 {
+	background-color: #F8F8FF;
+}
+
+.tableControl a {
+	padding-left: 0;
+}
+
+.tableControl {
+	text-align: right;
+}
+
+.tableRow1 {
+	background-color: #FFFFFF;
+}
+
+.tableRow2 {
+	background-color: #F1F1F1;
+}
+
+.targetOffContract {
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	background-image: url('../img/callout-offcontract.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* 	Editied by Mahendran 19th Jul 10, 
+	Migration to Seam 2.2.1
+ */
+
+/* Newly added */
+.rich-stglpanel-header {
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	color: #000000;
+	font-size: 1.2em;
+	font-family: arial, helvetica, sans-serif;
+	background-color: #006685;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 1px solid #bfd9e0;
+	padding: 2px 3px;
+	height: 20px;
+}
+
+.rich-toolbar {
+	background-image: none;
+	background-color: #000000;
+	border: 0px;
+}
+
+.rich-toolbar-item {
+	padding: 0px 0px;
+}
+
+.rich-menu-list-bg {
+	/*background-image:url(/ssltracker/a4j/g/3_2_2.GAorg.richfaces.renderkit.html.images.background.MenuListBackground/DATB/eAF79O3R2rNrmQAW2gTk);*/
+	/*background-image:none;*/
+	background-image: url("../img/menu_bk.gif");
+	background-color: #ffffff;
+	/*border-left-color:#E2F6E2;
+ border-right-color:#E2F6E2;
+ border-top-color:#E2F6E2;*/
+	border-left-color: #F1F1F1;
+	border-right-color: #F1F1F1;
+	border-top-color: #F1F1F1;
+}
+
+.rich-menu-list-border {
+	/* background-color: #f1f6f9; */
+	/* border-color:blue; */
+	/* display: none; */
+}
+
+.rich-menu-item {
+	color: #ffffff;
+}
+
+.rich-table-header {
+	background-color: #FFFFDD;
+	background-image: none;
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+
+.rich-table-headercell {
+	border-bottom: 1px solid #C0C0C0;
+	border-right: 1px solid #C0C0C0;
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+	text-align: center;
+	background-color: #FFFFDD;
+}
+
+/* Edited existing one */
+.rich-panel-header {
+	background-color: #CCCCCC;
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	border-color: -moz-use-text-color -moz-use-text-color #C0C0C0;
+	border-style: solid;
+	border-width: 0 0 1px;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 1.15em;
+	height: 14px;
+	padding: 5px;
+}
+
+.rich-list-shuttle-button {
+	background-color: #CCCCCC;
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.rich-list-shuttle-button-disabled {
+	background-color: #CCCCCC;
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	color: #CCCCCC;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.sp2-breadcrump-toolbar {
+	background-color: LightGoldenRodYellow;
+	border-width: 0 0 1;
+	height: 30px;
+	padding: 5px;
+}
+
+.sp2-breadcrump-toolbar-item {
+	font-family: arial, helvetica, sans-serif;
+	padding: 4px;
+	font-size: 1em;
+}
+
+.sp2-breadcrump-toolbar-item-separator {
+	font-family: arial, helvetica, sans-serif;
+	padding: 4px;
+	font-size: 1.5em;
+}
+
+.rich-table-subheadercell {
+	background-color: #ffffdd;
+	white-space: normal;
+	background-image: none;
+	/* THis is to avoid seam gen putting its own graident image.*/
+}
+
+.rich-table-subheadercell-note {
+	background-color: #ffffdd;
+	white-space: normal;
+	background-image: none;
+	/* THis is to avoid seam gen putting its own graident image.*/
+	font-weight: normal;
+	color: #FE0000;
+}
+
+.suggest-table-cell {
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.rich-ddmenu-label-select {
+	background-color: #000000;
+	color: #FFFFFF;
+	border-color: #000000;
+}
+
+/* Suggestion box(styles) */
+
+/* to be added to TCP as well */
+.rich-tablerow {
+	background-image: url("../img/yellowbar.jpg");
+	border: 0 none;
+	color: #666666;
+	font-family: verdana, arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	height: 20px;
+	line-height: normal;
+}
+
+.rich-sb-int-sel {
+	background-color: #FFCC00;
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	background-repeat: repeat;
+	border-bottom: 1px solid #BFD9E0;
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.rich-sb-cell-padding {
+	border-bottom: 1px solid #C0C0C0;
+	border-right: 1px solid #C0C0C0;
+	padding: 4px;
+}
+
+.rich-sb-int {
+	background-color: #FFFFFF;
+	background-repeat: repeat;
+	border-bottom: 1px solid #BFD9E0;
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.rich-mpnl-header {
+	background-color: #BED6F8;
+	background-image: url("../img/yellowbar.jpg");
+	border-color: #BED6F8;
+	border-width: 0;
+	padding: 0;
+}
+
+.rich-mpnl-content {
+	background-color: #FFFFFF;
+	border-color: #C0C0C0;
+}
+
+.portthreat-screen-input-controls {
+	width: 250px;
+}
+
+.rich-tab-bottom-line {
+	border-bottom: 1px solid #CCCCCC;
+	padding-left: 0px;
+}
+
+.rich-tabhdr-side-border {
+	background-image: none;
+}
+
+.rich-tabpanel-content {
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	color: #000000;
+}
+
+.rich-tabhdr-side-cell {
+	border-top-color: #CCCCCC;
+}
+
+.rich-tab-active {
+	background-image: url("../img/tabselect.gif");
+	font-weight: bold;
+	padding: 0;
+	color: #FFFFFF;
+}
+
+.rich-tab-inactive {
+	background-image: url("../img/tab.gif");
+	background-color: none !important;
+	border-style: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.rich-tab-header {
+	color: #DDDDDD;
+	font-size: 11px;
+	padding: 5px;
+}
+
+.gl-actioned-row {
+	color: Lime;
+	background-color: Silver
+}
+
+list-shuttle-button {
+	background-color: #f0e40b;
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.richfacesSkin table {
+	background: none repeat scroll 0 0 #CCCCCC;
+	background-image: url("../img/dr-pnl-h-bk_52.gif") !important;
+}
+
+//
+travis to provide smillar image with lager height
+.richfacesSkin .mceToolbar {
+	background-color: #CCCCCC;
+	height: 26px;
+	background-image: url("../img/dr-pnl-h-bk_52.gif") !important;
+}
+
+.richfacesSkin table.mceLayout tr.mceFirst td {
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+}
+
+.richfacesSkin .mceButton {
+	background-image: url("../img/dr-pnl-h-bk.gif") !important;
+}
+
+.richfacesSkin .mceSeparator {
+	background-image: url("../img/dr-pnl-h-bk.gif") !important;
+	background-position: -22px 0;
+}
+
+.rich-table-footercell {
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left;
+	background-color: #FFFFFF;
+	border-bottom: none;
+	border-right: none;
+}
+
+.rich-dtascroller-table {
+	background-color: #FFFFFF;
+	background-image: url("../img/dr-pnl-h-bk_52.gif") !important;
+	border-color: #CCCCCC;
+}
+
+.rich-datascr-button,.rich-datascr-ctrls-separator {
+	background-color: #CCCCCC;
+	background-image: url("../img/dr-pnl-h-bk.gif");
+	border-color: #CCCCCC;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	text-align: center;
+	width: 25px;
+}
+
+.rich-datascr-button-dsbld {
+	color: #CCCCCC;
+}
+
+.rich-datascr-inact {
+	border-top-color: #CCCCCC;
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.supercal_grid_col {
+	border: none;
+}
+
+.rich-sdt {
+    background-color: #FFFFFF;
+    border-color: #C0C0C0;
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.rich-sdt-column-cell-body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	padding: 3px;
+	text-align: left;
+}
+
+.rich-sdt-header-cell-body, .rich-sdt-footer-cell-body {
+	background-color: #FFFFDD;
+}
+
+.resultColumnNameClass {
+	width:250px; 
+	white-space:normal!important;
+}
+
+.resultColumnValueClass {
+	width:300px; 
+	white-space:normal!important;
+}
+
+.rich-table-subfooter {
+	background-color: #FFFFDD;
+}
+
+.rich-table-subfootercell {
+	border-bottom: 1px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
+    color: #000000;
+    font-family: Arial,Verdana,sans-serif;
+    font-size: 11px;
+    font-weight: bold;	
+    padding: 4px;
+    text-align: center;
+    white-space: normal;
+}

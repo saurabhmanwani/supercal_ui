@@ -1,0 +1,97 @@
+<div class="body" ng-controller="compareRatePlanContlr">
+    <form name="compareRatePlans">
+        <input type="hidden" name="compareRatePlans" value="compareRatePlans">
+        <div class="rich-stglpanel">
+            <div class="rich-stglpanel-header" onclick="">
+                <div class="rich-stglpanel-marker">
+                    <div class="rich-stglpnl-marker" id="showdiv" onclick="toggleDiv();">«</div>
+                </div>
+                Compare Rate Plans&nbsp;
+            </div>
+            <div class="rich-stglpanel-body">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Products</b>
+                            </td>
+                            <td><b>Rate Plan Family</b>
+                            </td>
+                            <td><b>Rate Plans</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select ng-model="product" ng-options="product.id as product.productName for product in products" ng-change="getRatePlanFamilies(product)">
+                                    <option value="">Select a Product</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select ng-model="planFamily1" ng-options="planFamily1.id as planFamily1.ratePlanFamilyName for planFamily1 in planFamilies" ng-change="getRatePlans(planFamily1,'1')">
+                                    <option value="">Select a Family</option>
+                                </select>
+                                -
+                            </td>
+                            <td>
+                                <select ng-model="ratePlan1" ng-options="ratePlan1.id as ratePlan1.ratePlanId for ratePlan1 in plan1">
+                                    <option value="">Select a Plan</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <select ng-model="planFamily2" ng-options="planFamily2.id as planFamily2.ratePlanFamilyName for planFamily2 in planFamilies" ng-change="getRatePlans(planFamily2,'2')">
+                                    <option value="">Select a Family</option>
+                                </select>
+                                -
+                            </td>
+                            <td>
+                                <select ng-model="ratePlan2" ng-options="ratePlan2.id as ratePlan2.ratePlanId for ratePlan2 in plan2">
+                                    <option value="">Select a Plan</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <select ng-model="planFamily3" ng-options="planFamily3.id as planFamily3.ratePlanFamilyName for planFamily3 in planFamilies" ng-change="getRatePlans(planFamily3,'3')">
+                                    <option value="">Select a Family</option>
+                                </select>
+                                -
+                            </td>
+                            <td>
+                                <select ng-model="ratePlan3" ng-options="ratePlan3.id as ratePlan3.ratePlanId for ratePlan3 in plan3">
+                                    <option value="">Select a Plan</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="actionButtons">
+            <input ng-model="search" ng-click="compRatePlans()" type="image" src="img/but-search.gif" />
+            <input type="image" src="img/but-reset.gif" />
+        </div>
+    </form>
+    <img alt="" height="5px" src="img/spacer.gif" width="1" />
+    <div class="rich-panel">
+        <div class="rich-panel-header">RatePlan Compare Results</div>
+        <div class="rich-panel-body">
+            <table class="rich-table" width="100%" style="table-layout:fixed">
+                <thead class="rich-table-thead">
+                    <tr class="rich-table-subheader">
+                
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat = "ratePlan in ratePlans track by $index" onmouseover="this.style.backgroundColor=&#39;#F1F1F1&#39;" onmouseout="this.style.backgroundColor=&#39;#FFFFFF&#39;" style="background-color: rgb(255, 255, 255);">
+                        <td ng-repeat = "ratePlanCols in ratePlan track by $index" ng-bind-html="getHTMLContent(ratePlanCols)" class="rich-table-cell resultColumnNameClass">                           
+                            {{ ratePlanCols }}
+                        </td>   
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Bolt On Search</title>
+      <script src="js/framework.pack.js" type="text/javascript"></script>
+      <script src="js/ui.pack.js" type="text/javascript"></script>
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/theme.css" rel="stylesheet" type="text/css">
+      <link href="css/optus_theme.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <div class="menu-header" style="margin:10px 5px 0px 5px;">
+         <div class="section-header-inner">
+            <div style="margin:10px 10px 2px 10px;">
+               <table class="rich-toolbar" width="100%">
+                  <tbody>
+                     <tr valign="middle">
+                        <td class="rich-toolbar-item" style="background-color:#000000;margin:0;">
+                           <a href="http://localhost:8180/supercal/home.seam" id="userHomeId">
+                           <img src="img/smbsupercallogo.png" alt="Yes Optus Business" style="margin:0;">
+                           </a>
+                        </td>
+                        <td style="width:100%"></td>
+                        <td class="rich-toolbar-item">
+                            <span id="menuWelcomeId" class="menuHeaderWelcome" style="margin-left:8px;margin-right:10px;padding-top:2px;">Signed in as: Saurabh(Read Only User)</span>
+                        </td>
+                        <td class="rich-toolbar-item">
+                           <div class="rich-ddmenu-label rich-ddmenu-label-unselect">
+                              <div class="rich-label-text-decor">
+                                  <span style="COLOR: #f0e40b; font-weight: bold; text-decoration: underline; font-size: 14px;">Main Menu
+                                  </span>
+                              </div>
+                              <div style="margin: 0px; padding: 0px; border: 0px; position: absolute; z-index: 100;">
+                                 <div id="j_id16_menu" class="rich-menu-list-border" style="display: none; z-index: 2;">
+                                    <div class="rich-menu-list-bg">
+                                       <div class="rich-menu-item rich-menu-item-enabled" onclick="">
+                                           <span class="rich-menu-item-icon">
+                                               <img alt="" height="16" src="img/spacer.gif" width="16">
+                                           </span>
+                                           <span class="rich-menu-item-label">
+                                               <a href="" id="ViewRatePlansId" class="menuHeaderItems">View Rate Plans By Family
+                                               </a>
+                                           </span>
+                                       </div>
+                                       <div class="rich-menu-list-strut">
+                                          <div class="rich-menu-list-strut" style="">&nbsp;</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </td>
+                        <td class="rich-toolbar-item" style=";">
+                           <a href="" id="menuLogoutId">
+                              <img src="img/but-logout.gif" style="cursor:pointer;vertical-align:middle;" class="pic"/>
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+      <div class="body">
+         <div id="modalIFrame" style="display: none;">
+            <script type="text/javascript"></script>
+         </div>
+         <form id="boltOnSearch" name="boltOnSearch" method="post" action="" enctype="application/x-www-form-urlencoded">
+            <input type="hidden" name="boltOnSearch" value="boltOnSearch">
+            <div class="rich-stglpanel">
+               <div class="rich-stglpanel-header" onclick="">
+                  Bolt On Search &nbsp;
+               </div>
+               <div class="rich-stglpanel-body">
+                  <div>
+                     <div class="prop" style="text-align: right;">
+                        <label class="name">
+                           <span>
+                              <span>BoltOn Family :
+                                 <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15"/>
+                              </span>
+                           </span>
+                           <span class="required">
+                              <img src="img/spacer.gif" height="9" class="img-required" width="9"/>
+                           </span>
+                        </label>
+                        <span class="value displayonly">
+                           <select name="boltOnSearch:boltOnFamilyFieldId:boltOnFamilyId" size="1">
+                              <option value="noSelectionValue"></option>
+                              <option value="0">International Pack </option>
+                              <option value="1">'yes' Biz Data</option>
+                           </select>
+                        </span>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prop" style="text-align: right;">
+                        <label class="name">
+                           <span>
+                              <span>Bolt On Name :
+                                  <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15"/>
+                              </span>
+                           </span>
+                           <span class="required">
+                              <img src="img/spacer.gif" height="9" class="img-required" width="9"/>
+                           </span>
+                        </label>
+                           <span class="value displayonly">
+                              <input type="text" name="boltOnSearch:j_id93:boltOnName" size="60">
+                           </span>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prop" style="text-align: right;">
+                        <label class="name">
+                           <span>
+                              <span>Status :
+                                 <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15"/>
+                              </span>
+                           </span>
+                           <span class="required">
+                              <img src="img/spacer.gif" height="9" class="img-required" width="9"/>
+                           </span>
+                        </label>
+                        <span class="value displayonly">
+                           <select name="boltOnSearch:j_id111:status" size="1">
+                              <option value="ACTIVE">Active</option>
+                              <option value="INACTIVE">InActive</option>
+                           </select>
+                        </span>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prop" style="text-align: right;">
+                        <label class="name">
+                           <span>
+                              <span>Match :
+                                 <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15"/>
+                              </span>
+                           </span>
+                           <span class="required">
+                              <img src="img/spacer.gif" height="9" class="img-required" width="9"/>
+                           </span>
+                     </label>
+                        <span class="value displayonly">
+                           <table class="radio">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <input type="radio" checked="checked" name="boltOnSearch:j_id129:logic" value="and">
+                                       <label> All</label>
+                                    </td>
+                                    <td>
+                                       <input type="radio" name="boltOnSearch:j_id129:logic" value="or">
+                                       <label> Any</label>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="actionButtons"><input type="image" src="img/but-search.gif" name="boltOnSearch:search">
+                <input onclick="" id="boltOnSearch:reset" type="image" src="img/but-reset.gif"/>           
+            </div>
+         </form>
+         <div class="rich-panel ">
+            <div class="rich-panel-header">BoltOn Search Results (10)</div>
+            <div class="rich-panel-body">
+               <div id="viewBoltOnsByFamily">
+                  <table class="rich-table">
+                     <colgroup span="4"></colgroup>
+                     <thead class="rich-table-thead">
+                        <tr class="rich-table-subheader ">
+                           <th class="rich-table-subheadercell" scope="col"><a href="">Id </a></th>
+                           <th class="rich-table-subheadercell" scope="col"><a href="">Bolt On Name </a></th>
+                           <th class="rich-table-subheadercell" scope="col">Bolt On Family</th>
+                           <th class="rich-table-subheadercell" scope="col"><a href="">Status </a></th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr onmouseover="this.style.backgroundColor=&#39;#F1F1F1&#39;" onmouseout="this.style.backgroundColor=&#39;#FFFFFF&#39;">
+                           <td class="rich-table-cell ">2</td>
+                           <td class="rich-table-cell ">$10 IVP</td>
+                           <td class="rich-table-cell ">International Pack </td>
+                           <td class="rich-table-cell ">ACTIVE</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="tableControl">
+         </div>
+      </div>
+      <div class="footer" style="border:1px;">
+         <a href="http://collaborate.optus.com.au/wiki/display/express/Home" target="_blank"><img alt="Express Wiki" src="img/express_solutions.gif" style="vertical-align: middle;"></a>
+         <br><span style="vertical-align: middle;color:#505050">@VERSION_NO@</span>
+         <br>
+      </div>
+   </body>
+</html>

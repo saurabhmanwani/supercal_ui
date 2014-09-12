@@ -1,0 +1,79 @@
+<div class="body">
+    <form name="login" ng-submit="submitForm()" ng-controller="loginContlr">
+        <div class="rich-panel">
+            <div class="rich-panel-header">Please Login</div>
+            <div class="rich-panel-body">
+                <div style="clear:both;float:left;">
+                    Use your Optus username and password that you use to login to your desktop.
+                </div>
+                <br>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>User Name :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/required.jpg" class="img-required">
+                            </span>
+                        </label>
+                        <span class="value ">
+                            <input type="text" ng-model="username" size="40">
+                        </span>
+                        <span class="error">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name ">
+                            <span>Password :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/required.jpg" class="img-required">
+                            </span>
+                        </label>
+                        <span class="value ">
+                            <input type="password" ng-model="userpassword" size="40">
+                        </span>
+                        <span class="error">
+                        </span>
+                    </div>
+                </div>
+                <!-- Refer to comments for class component UserLoginType.java for reasons for having this field in
+               development. In non development, this field will not display -->
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name ">
+                            <span onclick="" style="cursor:pointer;">Impersonate User :
+                                <img src="img/help_msg.gif" class="img-spacer-1">
+                            </span>
+                            <span class="required">
+                                <img src="img/required.jpg" class="img-required">
+                            </span>
+                        </label>
+                        <span class="value ">
+                            <select size="1" onchange="">
+                                <option value="false" selected="selected">No</option>
+                                <option value="true">Yes</option>
+                            </select>
+                        </span>
+                        <span class="error">
+                        </span>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="actionButtons">
+                    <div>
+                        <label class="name" style="white-space:nowrap;">
+                            <span class="value"></span>
+                            <span class="error"></span>
+                        </label>
+                        <input type="image" src="img/but-login.gif" name="submit" class="noBorder">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,100 @@
+<div class="body" ng-controller="searchEmailContlr">
+    <span id="messagesRegion"></span>
+    <form id="searchEmails" name="searchEmails" method="post" class="edit">
+        <div class="rich-stglpanel">
+            <div class="rich-stglpanel-header">
+                <div class="rich-stglpanel-marker">
+                    <div class="rich-stglpnl-marker" id="showdiv" onclick="toggleDiv();">«</div>
+                </div>Search Emails
+            </div>
+            <div class="rich-stglpanel-body">
+                <div class="prop" style="text-align: right;">
+                    <label class="name">
+                        <span>Customer Name :
+                            <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                        </span>
+                        <span class="required">
+                            <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                        </span>
+                    </label>
+                    <span class="value displayonly">
+                        <input type="text">
+                    </span>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>Email Address :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <input type="text">
+                        </span>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>Account Number :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <input type="text">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>Start Date :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+                        <span class="value displayonly">
+                            <span>
+                                <input class="rich-calendar-input" style="vertical-align: middle; " type="text" readonly="readonly">
+                                <img alt="" class="rich-calendar-button" style="vertical-align: middle" src="img/cal.gif">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="prop" style="text-align: right;">
+                        <label class="name">
+                            <span>End Date :
+                                <img src="img/spacer.gif" height="15" class="img-spacer-1" width="15">
+                            </span>
+                            <span class="required">
+                                <img src="img/spacer.gif" height="9" class="img-required" width="9">
+                            </span>
+                        </label>
+
+                        <span class="value displayonly">
+                            <span>
+                                <input class="rich-calendar-input" style="vertical-align: middle; " type="text" readonly="readonly">
+                                <img alt="" class="rich-calendar-button" style="vertical-align: middle" src="img/cal.gif">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actionButtons">
+            <input type="image" src="img/but-search.gif">
+            <input onclick="" type="image" src="img/but-reset.gif">
+        </div>
+    </form>
+</div>

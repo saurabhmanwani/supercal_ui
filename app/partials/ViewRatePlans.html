@@ -1,0 +1,81 @@
+<div class="body" ng-controller="viewRatePlanContlr">
+    <span id="messagesRegion" ng-show="showme">
+        <ul class="message">
+            <li class="infomsg">
+                Welcome,
+                <span ng-bind="username"></span>!
+            </li>
+        </ul>
+    </span>
+    <form name="viewRatePlans" method="post">
+        <div class="rich-stglpanel">
+            <div class="rich-stglpanel-header" onclick="">
+                <div class="rich-stglpanel-marker">
+                    <div class="rich-stglpnl-marker" id="showdiv" onclick="toggleDiv();">«</div>
+                </div>View Rate Plans By Rate Plan Family&nbsp;
+            </div>
+            <div class="rich-stglpanel-body">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Products</b>
+                            </td>
+                            <td>
+                                <select ng-model="product" ng-options="product.id as product.productName for product in products" ng-change="getRatePlanFamilies(product)">
+                                    <option value="">Select a Product</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Rate Plan Family</b>
+                            </td>
+                            <td>
+                                <select ng-model="planFamily" ng-options="planFamily.id as planFamily.ratePlanFamilyName for planFamily in planFamilies">
+                                    <option value="">Select a Family</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="actionButtons">
+            <input ng-model="search" type="image" src="img/but-search.gif" ng-click="getRatePlans(planFamily)" /><input type="image" src="img/but-reset.gif" />
+        </div>
+    </form>
+    <img alt="" class="rich-spacer" height="5px" src="img/spacer.gif" width="1" />
+    <div class="rich-panel">
+        <div class="rich-panel-header">Rate Plans By Rate Plan Family</div>
+        <div class="rich-panel-body">
+            <table class="rich-table" width="100%" style="table-layout:fixed">
+                <thead class="rich-table-thead">
+                    <tr ng-repeat = "ratePlan in ratePlans | limitTo:1 track by $index" class="rich-table-subheader ">
+                        <th ng-repeat = "ratePlanCols in ratePlan track by $index" ng-bind-html="getHTMLContent(ratePlanCols)" class="rich-table-subheadercell  " scope="col">
+                            <div>{{ ratePlanCols }}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr ng-repeat = "ratePlan in ratePlans | limitTo:1 track by $index" class="rich-table-subfooter ">
+                        <td ng-repeat = "ratePlanCols in ratePlan track by $index" ng-bind-html="getHTMLContent(ratePlanCols)" class="rich-table-subfootercell" scope="col">
+                            {{ ratePlanCols }}
+                        </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr ng-repeat = "ratePlan in ratePlans track by $index" ng-if="$index > 1" class="rich-table-row rich-table-firstrow rvgRowOne" onmouseover="this.style.backgroundColor=&#39;#F1F1F1&#39;" onmouseout="this.style.backgroundColor=&#39;#FFFFFF&#39;" style="background-color: rgb(255, 255, 255);">                        
+                      <td ng-repeat = "ratePlanCols in ratePlan track by $index" ng-bind-html="getHTMLContent(ratePlanCols)" class="rich-table-cell resultColumnNameClass">                           
+                            {{ ratePlanCols }}
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+                <div ng-show="loading" style="background-color:#006685;width:250px;height:40px;margin: 0 auto">
+                    <img class="pic" style="vertical-align:middle;margin-top: 2px" src="img/ajax-loader.gif">
+                    <span style="color:#ffd100;font-size:13px;padding-bottom:5px;">Please wait... Processing in Progress...</span>            
+                </div>      
+    </div>
